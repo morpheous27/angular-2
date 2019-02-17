@@ -11,7 +11,7 @@
 
 <div>
   <ul>
-    <li [class.selected]='h===selectedHero' *ngFor='let h of heroes' (click)="onSelect(h)">
+    <li [class.selected]='h===selectedHero' *ngFor='let h of getHeroes()' (click)="onSelect(h)">
       <span class="badge">{{h.id}}</span> {{h.name}}
       </li>
     </ul>
