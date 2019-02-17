@@ -1,0 +1,16 @@
+<!--<h3>
+  hero's Id - {{hero.id}}
+  Hero's name - {{hero.name | uppercase}}
+</h3>-->
+
+<div>
+  <label> name:
+    <input [(ngModel)]="hero.name" placeholder="name">
+  </label>
+</div>
+<div>
+  <ul>
+    <li *ngFor='let hero of heroes'>{{hero.id}} with name {{hero.name}};
+      </li>
+    </ul>
+</div>
